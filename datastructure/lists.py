@@ -100,3 +100,89 @@ print(numbers)        # [9, 7, 5, 2, 1]
 # Indexed = access by position.
 
 
+# .............................................................................................................
+
+
+
+# List compressions
+
+# A concise way to create lists.
+# Instead of writing a loop, you can build lists in one line.
+
+# Syntax:
+# [expression for item in iterable if condition]
+
+#  Basic Example
+
+# Without list comprehension:
+
+squares = []
+for i in range(5):
+    squares.append(i * i)
+print(squares)
+
+# With list comprehension:
+
+squares = [i * i for i in range(5)]
+print(squares)  # [0, 1, 4, 9, 16]
+
+
+
+# With Condition
+
+# You can add if to filter elements.
+
+evens = [i for i in range(10) if i % 2 == 0]
+print(evens)  # [0, 2, 4, 6, 8]
+
+
+
+
+#  Nested Loops
+
+# You can use more than one loop.
+
+pairs = [(x, y) for x in [1, 2] for y in [3, 4]]
+print(pairs)  # [(1, 3), (1, 4), (2, 3), (2, 4)]
+
+
+
+
+# With Functions
+
+# You can apply functions directly.
+
+words = ["hello", "python", "world"]
+uppercased = [w.upper() for w in words]
+print(uppercased)  # ['HELLO', 'PYTHON', 'WORLD']
+
+
+
+
+# List Comprehension with if-else
+
+# You can use a conditional expression.
+
+nums = [1, 2, 3, 4, 5]
+labels = ["even" if n % 2 == 0 else "odd" for n in nums]
+print(labels)  # ['odd', 'even', 'odd', 'even', 'odd']
+
+
+
+
+# Nested List Comprehension
+
+# Flattening a matrix:
+
+matrix = [[1, 2], [3, 4], [5, 6]]
+flat = [num for row in matrix for num in row]
+print(flat)  # [1, 2, 3, 4, 5, 6]
+
+
+
+# Advantages
+
+# Short and readable
+# Faster than normal loops in many cases
+# Powerful for transformations + filtering
+
