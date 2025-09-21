@@ -38,3 +38,6 @@
 
 #slicing 
 #print(name[1:3])  #output is "ho"
+
+
+
