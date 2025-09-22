@@ -15,7 +15,7 @@
 {
   "name": "Alice",
   "age": 25,
-  "is_student": false,
+#   "is_student": false,
   "skills": ["Python", "Data Science"],
   "address": {
     "city": "Bengaluru",

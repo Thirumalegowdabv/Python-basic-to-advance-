@@ -59,13 +59,13 @@ print(random.randint(1, 100))  # always same number with same seed
 
 # For data science & machine learning, we often use NumPy’s random module:
 
-import numpy as np
+# import numpy as np
 
-# Random array of integers
-print(np.random.randint(1, 10, size=5))
+# # Random array of integers
+# print(np.random.randint(1, 10, size=5))
 
-# Random floats between 0 and 1
-print(np.random.rand(3))
+# # Random floats between 0 and 1
+# print(np.random.rand(3))
 
 
 
